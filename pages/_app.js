@@ -1,15 +1,15 @@
 import { Provider } from 'react-redux'
 import { useStore } from '@/store'
-import SiteLayout from '@/components/SiteLayout'
+import LayoutMain from '@/components/layouts/LayoutMain'
 
 export default function App({ Component, pageProps }) {
   const store = useStore(pageProps.initialReduxState)
 
   return (
     <Provider store={store}>
-      <SiteLayout>
+      <LayoutMain>
         <Component {...pageProps} />
-      </SiteLayout>
+      </LayoutMain>
     </Provider>
   )
 }

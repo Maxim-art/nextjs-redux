@@ -1,8 +1,8 @@
 import { useDispatch } from 'react-redux'
-import useInterval from '../lib/useInterval'
+import useInterval from '@/lib/useInterval'
 import Clock from './clock'
 import Counter from './counter'
-import Nav from './nav'
+import Nav from './base/nav'
 
 export default function Page() {
   const dispatch = useDispatch()
