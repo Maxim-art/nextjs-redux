@@ -11,6 +11,7 @@ import {
   Button,
   // Paper,
   Grid,
+  NoSsr,
 } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => {
@@ -38,6 +39,7 @@ const SiteLayout = ({ children }) => {
 
   return (
     <div style={{ display: 'flex' }}>
+      <NoSsr>
       <AppBar position="fixed">
         <Container fixed>
           <Toolbar disableGutters>
@@ -121,6 +123,7 @@ const SiteLayout = ({ children }) => {
           </Container>
         </div> */}
       </main>
+      </NoSsr>
     </div>
   )
 }
